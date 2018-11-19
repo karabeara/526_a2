@@ -1,0 +1,101 @@
+<head>
+    <title> COS 526 Assignment 2 Writeup</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <script src="js/writeup.js"> </script>
+    <div class="main_div">
+
+        <h1> <div class=assignment>COS 526 Assignment 2</div>Point Cloud Registration</h1>
+        <div class='selectable'>
+        <h2 id='student'>Kara Bressler (karab)</h2>
+
+ This project is written in Python 3 running in a Jupyter Notebook. Assuming previous installation of Anaconda, a user simply needs to run the Jupyter Notebook "526_a2.ipynb" by typing 'jupyter notebook' in the command line in the corresponding directory. Running the notebook will then run all of the cells of the notebook sequentially. The notebook should be run 9 times in total, changing the variable with the file names in order to align all the relevant transformation matrices. Run notebook with the following file names in order (file1Name, file2Name respectively):
+<br><br>
+ <li>bun045, bun000</li>
+ <li>bun090, bun045</li>
+ <li>bun315, bun000</li>
+ <li>bun270, bun315</li>
+ <li>bun180, bun270</li>
+ <li>chin, bun315</li>
+ <li>ear_back, bun180</li>
+ <li>top2, bun180</li>
+ <li>top3, bun000</li>
+
+ <br>
+
+ User provided input should be made in the first cell of the notebook under the comment "USER INPUT."
+
+ <br><br>
+
+</ul></div>
+
+<p><hr><p><a name='Implementation'></a><h2>Implementation</h2><p><hr><p>
+
+Before the solution, we see meshes misaligned as so: 
+
+<br>
+
+<a href='Results/45_00_off.png'><img src='Results/45_00_off.png' width=16%;></a>
+
+<br>
+
+and after alignment of two meshes, we see: 
+
+<br>
+
+<a href='Results/45_00_align.png'><img src='Results/45_00_align.png' width=16%;></a>
+
+<br>
+
+Below we see the final implemenatation with all the point cloud samples lined up!
+
+<br><a href='Results/one.png'><img src='Results/one.png' width=16%;></a>
+
+<a href='Results/two.png'><img src='Results/two.png' width=16%;></a>
+
+<a href='Results/three.png'><img src='Results/three.png' width=16%;></a>
+
+<a href='Results/four.png'><img src='Results/four.png' width=16%;></a>
+
+<a href='Results/five.png'><img src='Results/five.png' width=16%;></a>
+
+<a href='Results/six.png'><img src='Results/six.png' width=16%;></a>
+
+<br>
+
+And from the top and the bottom: 
+
+<br>
+
+<a href='Results/top.png'><img src='Results/top.png' width=16%;></a>
+
+<a href='Results/bottom.png'><img src='Results/bottom.png' width=16%;></a>
+
+
+
+<p><hr><p><a name='Resources'></a><h2>Resources</h2><p><hr><p>
+Here's a list of the resources consulted and used to make this program:
+
+<ul>
+
+<li> <a href='http://www.numpy.org'>NumPy Documentation</a></li>
+
+<li> <a href='https://www.pythonforbeginners.com/cheatsheet/python-file-handling'>File Handling Cheat Sheet for Python</a></li>
+
+<li> <a href='http://www.cs.princeton.edu/courses/archive/spr17/cos426/notes/cos426_s17_lecture10_transform.pdf'>COS 426 notes concerning transformations in homogeneous coordinates</a></li>
+
+<li> <a href='http://www.cs.princeton.edu/courses/archive/fall15/cos226/lectures/99GeometricSearch.pdf'>COS 226 notes concerning kd-trees</a></li>
+
+<li> <a href='https://docs.scipy.org/doc/scipy/reference/spatial.html#spatial-data-structures-and-algorithms'>SciPy's KDTree class</a></li>
+
+<li> <a href='https://stackoverflow.com/questions/2486093/millions-of-3d-points-how-to-find-the-10-of-them-closest-to-a-given-point'>StackOverflow concerning implementing SciPy's KDTree class</a></li>
+
+<li> <a href='http://www.graphics.stanford.edu/courses/cs248-98-fall/Final/q4.html'>Stanford CS 248 notes concerning inverse matrices</a></li>
+
+<li> <a href='http://www.cs.princeton.edu/courses/archive/spr17/cos426/notes/cos426_s17_lecture10_transform.pdf'>COS 426 notes concerning (slightly wrong) basic translation and rotation matrices on slides 56, 57</a></li>
+<br> <br> <br> 
+  </div>
+</body>
+</html>
